@@ -19,9 +19,10 @@ puts
 
 case encrypt_method
   when 1
-    puts Digest::MD5.hexdigest(word)
+    puts a = Digest::MD5.hexdigest(word)
   when 2
     puts Digest::SHA256.hexdigest(word)
   end
+
 
   
