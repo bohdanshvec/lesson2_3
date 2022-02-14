@@ -1,3 +1,0 @@
-class Films < Product
-
-end

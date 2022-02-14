@@ -1,5 +1,29 @@
-require_relative 'product'
-require_relative 'films'
-require_relative 'books'
+require_relative 'lib/product'
+require_relative 'lib/films'
+require_relative 'lib/books'
 
-q = Films.new.start
+products = []
+
+products << Books.new(category: 2 , name: "Zolushka", price: 12, autor: "Ганс Андерсон", year: 1765)
+
+products << Books.new(category: 2 , name: "Zolu", price: 100, autor: " Андерсон", year: 1723)
+
+products << Films.new(category: 1 , name: "Dsasv", price: 10, director: "Onnnn", year: 1999)
+
+products << Films.new(category: 1 , name: "Nill", price: 25, director: " Андерсон", year: 2000)
+
+
+#     puts "Укажите категорию товара:"
+#     ategory = gets.chomp.to_i
+#     puts "Укажите название товара:"
+#     ame = gets.chomp    
+#     puts "Укажите цену товара:"
+#     rice = gets.chomp.to_i
+
+# products << Films.new(category: ategory , name: ame, price: rice)
+
+
+puts 'Вот какие товары у нас есть:'
+puts
+products.each {|f| f.start}
+
